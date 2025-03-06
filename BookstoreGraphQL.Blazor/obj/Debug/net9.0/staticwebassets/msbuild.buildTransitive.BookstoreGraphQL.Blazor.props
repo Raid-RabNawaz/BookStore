@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\BookstoreGraphQL.Blazor.props" />
-</Project>
