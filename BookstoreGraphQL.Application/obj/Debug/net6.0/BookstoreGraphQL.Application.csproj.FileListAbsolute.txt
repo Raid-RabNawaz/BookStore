@@ -1,0 +1,15 @@
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\bin\Debug\net6.0\BookstoreGraphQL.Application.deps.json
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\bin\Debug\net6.0\BookstoreGraphQL.Application.dll
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\bin\Debug\net6.0\BookstoreGraphQL.Application.pdb
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\bin\Debug\net6.0\BookstoreGraphQL.Domain.dll
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\bin\Debug\net6.0\BookstoreGraphQL.Domain.pdb
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\BookstoreGraphQL.Application.csproj.AssemblyReference.cache
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\BookstoreGraphQL.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\BookstoreGraphQL.Application.AssemblyInfoInputs.cache
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\BookstoreGraphQL.Application.AssemblyInfo.cs
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\BookstoreGraphQL.Application.csproj.CoreCompileInputs.cache
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\Bookstor.9A01FBD7.Up2Date
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\BookstoreGraphQL.Application.dll
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\refint\BookstoreGraphQL.Application.dll
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\BookstoreGraphQL.Application.pdb
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Application\obj\Debug\net6.0\ref\BookstoreGraphQL.Application.dll

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "vM7P+ta7llJILeLqNwcgeSKj3zSYrORDX5/2JLnh9Qs=",
+  "Source": "BookstoreGraphQL.API",
+  "BasePath": "_content/BookstoreGraphQL.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

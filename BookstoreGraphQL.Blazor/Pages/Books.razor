@@ -1,0 +1,68 @@
+﻿@page "/books"
+@using BookstoreGraphQL.Application.DTOs
+@using BookstoreGraphQL.Blazor.Services
+@inject BookService BookService
+
+<h3 class="text-center mb-4">📚 Available Books</h3>
+
+@if (books == null)
+{
+    <div class="text-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+else if (books.Count == 0)
+{
+    <p class="text-center text-muted">No books available.</p>
+}
+else
+{
+    <div class="container">
+        <div class="row">
+            @foreach (var book in books)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">@book.Title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">@book.AuthorName</h6>
+                            <p class="card-text">
+                                📦 Stock:
+                                <strong class="@(book.Stock < 1 ? "text-danger" : "text-success")">
+                                    @book.Stock
+                                </strong>
+                            </p>
+                            <p class="card-text text-success fw-bold">💰 $@book.Price</p>
+
+                            <button class="btn btn-primary w-100"
+                                    @onclick="() => BuyBook(book.Id)"
+                                    disabled="@(book.Stock < 1)">
+                                🛒 Buy Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    private List<BookDto> books;
+
+    protected override async Task OnInitializedAsync()
+    {
+        books = await BookService.GetBooks();
+    }
+
+    private async Task BuyBook(int bookId)
+    {
+        bool success = await BookService.BuyBook(bookId);
+        if (success)
+        {
+            books = await BookService.GetBooks(); // Refresh list
+        }
+    }
+}

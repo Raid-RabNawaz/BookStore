@@ -1,0 +1,63 @@
+﻿.sidebar {
+    width: 200px;
+    background-color: #333;
+    padding: 15px;
+    height: 100vh;
+    color: white;
+}
+
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+            .sidebar ul li a, .sidebar ul li button {
+                color: white;
+                text-decoration: none;
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+                .sidebar ul li button:hover, .sidebar ul li a:hover {
+                    text-decoration: underline;
+                }
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+.card-body {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }

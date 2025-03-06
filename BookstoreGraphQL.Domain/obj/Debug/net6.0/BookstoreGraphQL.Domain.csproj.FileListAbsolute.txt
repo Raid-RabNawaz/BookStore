@@ -1,0 +1,12 @@
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\bin\Debug\net6.0\BookstoreGraphQL.Domain.deps.json
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\bin\Debug\net6.0\BookstoreGraphQL.Domain.dll
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\bin\Debug\net6.0\BookstoreGraphQL.Domain.pdb
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\BookstoreGraphQL.Domain.csproj.AssemblyReference.cache
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\BookstoreGraphQL.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\BookstoreGraphQL.Domain.AssemblyInfoInputs.cache
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\BookstoreGraphQL.Domain.AssemblyInfo.cs
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\BookstoreGraphQL.Domain.csproj.CoreCompileInputs.cache
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\BookstoreGraphQL.Domain.dll
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\refint\BookstoreGraphQL.Domain.dll
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\BookstoreGraphQL.Domain.pdb
+D:\Work\Bookstore\BookstoreSolution\BookstoreGraphQL.Domain\obj\Debug\net6.0\ref\BookstoreGraphQL.Domain.dll

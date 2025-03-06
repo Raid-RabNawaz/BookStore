@@ -1,0 +1,40 @@
+﻿@page "/add-book"
+@using BookstoreGraphQL.Blazor.Services
+@inject BookService BookService
+@inject NavigationManager Navigation
+
+<h3>Add a New Book</h3>
+
+@if (message != null)
+{
+    <p class="text-success">@message</p>
+}
+
+<div>
+    <input @bind="title" placeholder="Title" class="form-control" />
+    <input @bind="authorName" placeholder="Author" class="form-control" />
+    <input @bind="stock" type="number" placeholder="Stock" class="form-control" />
+    <input @bind="price" type="number" placeholder="Price" class="form-control" />
+    <input @bind="publishedYear" type="number" placeholder="Published Year" class="form-control" />
+    <textarea @bind="description" placeholder="Description" class="form-control"></textarea>
+    <button class="btn btn-success mt-2" @onclick="AddNewBook">Add Book</button>
+</div>
+
+@code {
+    private string title;
+    private string authorName;
+    private int stock;
+    private decimal price;
+    private int publishedYear;
+    private string description;
+    private string message;
+
+    private async Task AddNewBook()
+    {
+        var book = await BookService.AddBook(title, authorName, stock, price, publishedYear, description);
+        if (book != null)
+        {
+            message = "Book added successfully!";
+        }
+    }
+}
