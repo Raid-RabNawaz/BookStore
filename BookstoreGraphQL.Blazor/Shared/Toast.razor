@@ -1,0 +1,48 @@
+﻿@using BookstoreGraphQL.Blazor.Services
+@inject ToastService ToastService
+
+<div class="toast-container">
+    @if (isToastVisible)
+    {
+        <div class="toast show align-items-center text-white bg-@toastType border-0" role="alert">
+            <div class="d-flex">
+                <div class="toast-body">
+                    <strong>@toastTitle:</strong> @toastMessage
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" aria-label="Close" @onclick="HideToast"></button>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private bool isToastVisible;
+    private string toastMessage;
+    private string toastType;
+    private string toastTitle;
+
+    protected override void OnInitialized()
+    {
+        ToastService.OnShow += ShowToast;
+    }
+
+    private void ShowToast(string message, string type, string title)
+    {
+        toastMessage = message;
+        toastType = type;
+        toastTitle = title;
+        isToastVisible = true;
+        StateHasChanged();
+
+        Task.Delay(3000).ContinueWith(_ =>
+        {
+            isToastVisible = false;
+            StateHasChanged();
+        });
+    }
+
+    private void HideToast()
+    {
+        isToastVisible = false;
+    }
+}

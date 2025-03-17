@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="HotChocolate.Abstractions" Version="13.9.7" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.36" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.36.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.36.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookstoreGraphQL.Domain\BookstoreGraphQL.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

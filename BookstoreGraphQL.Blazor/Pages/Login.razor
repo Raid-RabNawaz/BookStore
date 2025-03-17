@@ -1,0 +1,36 @@
+﻿@page "/login"
+@using BookstoreGraphQL.Blazor.Services
+@inject AuthService AuthService
+@inject NavigationManager Navigation
+
+<h3>Login</h3>
+
+@if (errorMessage != null)
+{
+    <p style="color:red">@errorMessage</p>
+}
+
+<input @bind="email" placeholder="Email" />
+<br />
+<input @bind="password" type="password" placeholder="Password" />
+<br />
+<button @onclick="UserLogin">Login</button>
+
+@code {
+    private string email;
+    private string password;
+    private string errorMessage;
+
+    private async Task UserLogin()
+    {
+        var success = await AuthService.Login(email, password);
+        if (success)
+        {
+            Navigation.NavigateTo("/", true);
+        }
+        else
+        {
+            errorMessage = "Invalid email or password.";
+        }
+    }
+}
